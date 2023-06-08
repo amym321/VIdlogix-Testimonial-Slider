@@ -66,7 +66,7 @@
         "button_chat": false,
         "button_popup": false,
         "disclaimer": "",
-        "background_color": "#f2f2f2",
+        "background_color": "#F8F6F7",
         "text_color": "",
         "layout": "bottom",
         "title_bottom_margin": 95,
@@ -146,7 +146,7 @@
       }
     },
     "19ea0694-57d4-4d79-8f9a-d6db5dd02aef": {
-      "type": "testimonials",
+      "type": "testimonials-about",
       "blocks": {
         "template--14937465815107__19ea0694-57d4-4d79-8f9a-d6db5dd02aef-1686244060138da3bd-0": {
           "type": "testimonial",
@@ -201,7 +201,7 @@
         "more_link": "",
         "link_text": "Read All Reviews",
         "round_images": true,
-        "color_background": "#f9f9f9",
+        "color_background": "#F8F6F7",
         "color_text": "#1c1d1d"
       }
     }
