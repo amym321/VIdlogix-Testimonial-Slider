@@ -172,18 +172,20 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author's name",
-            "author_info": "Los Angeles, CA"
+            "testimonial": "<p>Had an absolutely excellent experience with Jesse. He was helpful, friendly, listened & made great recommendations<\/p>",
+            "image": "shopify:\/\/shop_images\/UGC-1.png",
+            "author": "Natasha A.",
+            "author_info": ""
           }
         },
         "template--14937465815107__19ea0694-57d4-4d79-8f9a-d6db5dd02aef-1686244060138da3bd-3": {
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author's name",
-            "author_info": "Los Angeles, CA"
+            "testimonial": "<p>The reason I look to you for electronic equipment is customer service, period. Your sales people know their equipment.<\/p>",
+            "image": "shopify:\/\/shop_images\/UGC-4.png",
+            "author": "Karen F.",
+            "author_info": ""
           }
         }
       },
