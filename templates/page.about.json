@@ -66,7 +66,7 @@
         "button_chat": false,
         "button_popup": false,
         "disclaimer": "",
-        "background_color": "#F8F6F7",
+        "background_color": "#f8f6f7",
         "text_color": "",
         "layout": "bottom",
         "title_bottom_margin": 95,
@@ -187,13 +187,63 @@
             "author": "Karen F.",
             "author_info": ""
           }
+        },
+        "1b36881a-090b-4697-9663-e15b1daab294": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>SLIDE 5<\/p>",
+            "author": "SLIDE 5",
+            "author_info": ""
+          }
+        },
+        "1e97536a-c527-4701-9f91-dcd4a8973713": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>SLIDE 6<\/p>",
+            "author": "SLIDE 6",
+            "author_info": ""
+          }
+        },
+        "3ffdd206-423b-4af7-8dc4-50b17b427a45": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>SLIDE 7<\/p>",
+            "author": "SLIDE 7",
+            "author_info": ""
+          }
+        },
+        "3bcabcfb-5161-4638-a6bd-f95a7bfc06a8": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "348c0e37-8288-4a27-b096-38785a013dd8": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
         }
       },
       "block_order": [
         "template--14937465815107__19ea0694-57d4-4d79-8f9a-d6db5dd02aef-1686244060138da3bd-0",
         "template--14937465815107__19ea0694-57d4-4d79-8f9a-d6db5dd02aef-1686244060138da3bd-1",
         "template--14937465815107__19ea0694-57d4-4d79-8f9a-d6db5dd02aef-1686244060138da3bd-2",
-        "template--14937465815107__19ea0694-57d4-4d79-8f9a-d6db5dd02aef-1686244060138da3bd-3"
+        "template--14937465815107__19ea0694-57d4-4d79-8f9a-d6db5dd02aef-1686244060138da3bd-3",
+        "1b36881a-090b-4697-9663-e15b1daab294",
+        "1e97536a-c527-4701-9f91-dcd4a8973713",
+        "3ffdd206-423b-4af7-8dc4-50b17b427a45",
+        "3bcabcfb-5161-4638-a6bd-f95a7bfc06a8",
+        "348c0e37-8288-4a27-b096-38785a013dd8"
       ],
       "settings": {
         "title": "Happy Customers",
@@ -201,7 +251,7 @@
         "more_link": "",
         "link_text": "Read All Reviews",
         "round_images": true,
-        "color_background": "#F8F6F7",
+        "color_background": "#f8f6f7",
         "color_text": "#1c1d1d"
       }
     }
