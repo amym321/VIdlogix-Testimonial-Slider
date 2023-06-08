@@ -8451,6 +8451,87 @@ lazySizesConfig.expFactor = 4;
   })();
   
 
+
+  // - am
+  theme.TestimonialsAbout = (function() {
+    var defaults = {
+      adaptiveHeight: true,
+      avoidReflow: true,
+      // pageDots: true,
+      pageDots: false,
+      // prevNextButtons: false
+      prevNextButtons: true
+    };
+  
+    function Testimonials(container) {
+      this.container = container;
+      this.timeout;
+      var sectionId = container.getAttribute('data-section-id');
+      this.slideshow = container.querySelector('#Testimonials-' + sectionId);
+      this.namespace = '.testimonial-' + sectionId;
+  
+      if (!this.slideshow) { return }
+  
+      theme.initWhenVisible({
+        element: this.container,
+        callback: this.init.bind(this),
+        threshold: 600
+      });
+    }
+  
+    Testimonials.prototype = Object.assign({}, Testimonials.prototype, {
+      init: function() {
+        // Do not wrap when only a few blocks
+        if (this.slideshow.dataset.count <= 3) {
+          defaults.wrapAround = false;
+        }
+  
+        this.flickity = new theme.Slideshow(this.slideshow, defaults);
+  
+        // Autoscroll to next slide on load to indicate more blocks
+        if (this.slideshow.dataset.count > 2) {
+          this.timeout = setTimeout(function() {
+            this.flickity.goToSlide(1);
+          }.bind(this), 1000);
+        }
+      },
+  
+      onUnload: function() {
+        if (this.flickity && typeof this.flickity.destroy === 'function') {
+          this.flickity.destroy();
+        }
+      },
+  
+      onDeselect: function() {
+        if (this.flickity && typeof this.flickity.play === 'function') {
+          this.flickity.play();
+        }
+      },
+  
+      onBlockSelect: function(evt) {
+        var slide = this.slideshow.querySelector('.testimonials-slide--' + evt.detail.blockId)
+        var index = parseInt(slide.dataset.index);
+  
+        clearTimeout(this.timeout);
+  
+        if (this.flickity && typeof this.flickity.pause === 'function') {
+          this.flickity.goToSlide(index);
+          this.flickity.pause();
+        }
+      },
+  
+      onBlockDeselect: function() {
+        if (this.flickity && typeof this.flickity.play === 'function') {
+          this.flickity.play();
+        }
+      }
+    });
+  
+    return Testimonials;
+  })();
+
+
+
   theme.isStorageSupported = function(type) {
     // Return false if we are in an iframe without access to sessionStorage
     if (window.self !== window.top) {
@@ -8549,6 +8630,7 @@ lazySizesConfig.expFactor = 4;
     theme.sections.register('product-recommendations', theme.Recommendations);
     theme.sections.register('background-image', theme.BackgroundImage);
     theme.sections.register('testimonials', theme.Testimonials);
+    theme.sections.register('testimonials-about', theme.TestimonialsAbout); // - am
     theme.sections.register('video-section', theme.VideoSection);
     theme.sections.register('map', theme.Maps);
     theme.sections.register('footer-section', theme.FooterSection);
