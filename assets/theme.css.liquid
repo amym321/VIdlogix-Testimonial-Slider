@@ -304,11 +304,7 @@
 
 .flickity-previous{ left:10px; }
 
-.testimonials-about-section .flickity-previous{ left: -50px; } /*trustpilot - am*/
-
 .flickity-next{ right:10px; }
-
-.testimonials-about-section .flickity-next{ right: -50px; } /*trustpilot - am*/
 
 .flickity-rtl .flickity-previous{
   left:auto;
@@ -9707,11 +9703,6 @@ html[dir=rtl] .background-media-text__text{
   width:33%
 }
 
-.testimonials-about-slide{  /*trustpilot - am*/
-  width:25%;
-  padding: 0 25px;
-}
-
 .testimonials-slide:first-child{
     display:block;
   }
@@ -9725,9 +9716,9 @@ html[dir=rtl] .background-media-text__text{
     transform:scale(0.95);
     transition:transform 0.5s ease,box-shadow 0.5s ease;
   }
-  .testimonials-about-slide .testimonials-slider__text{  /*trustpilot - am*/
-    transform:scale(1);
-  }
+.testimonials-about-slide .testimonials-slider__text{  /*trustpilot - am*/
+  transform:scale(1);
+}
 
 .testimonials-slide.is-selected .testimonials-slider__text{
     transform:scale(1.1);
@@ -13325,9 +13316,34 @@ button#dummy-chat-button.chat-toggle {
 
 /* Trustpilot Testimonial Slider*/
 
+      /*drives how many blocks display*/
+.testimonials-about-slide {
+  width:25%;
+  padding: 0 25px;
+}
+@media (max-width:1180px) {
+  .testimonials-about-slide {
+    width:33%;
+  }
+}
+@media (max-width:975px) {
+  .testimonials-about-slide {
+    width:50%;
+  }
+}
+@media (max-width:606px) {
+  .testimonials-about-slide {
+    width:100%;
+  }
+}
+
 /* .testimonials-about-section .testimonials-slide.is-selected .testimonials-slider__text{
   box-shadow: 0 1px 0 0 rgba(182,196,210,.4);
 } */
+
+.testimonials-about-section .testimonial-stars {
+  margin-bottom: 3px;
+}
 
 .testimonials-about-section .testimonials-slider__text {
   padding: 15px;
@@ -13337,3 +13353,13 @@ button#dummy-chat-button.chat-toggle {
   height:17px;
 }
 
+.testimonials-about-section .testimonial-quote p::after {
+  content: "...";
+  display:inline;
+}
+
+.testimonials-about-section .flickity-button {
+  background-color: #c0c0c0;
+}
+.testimonials-about-section .flickity-previous{ left: -50px; }
+.testimonials-about-section .flickity-next{ right: -50px; }
