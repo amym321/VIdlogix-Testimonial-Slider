@@ -8,7 +8,7 @@
 {%- endstyle -%}
 
 <div
-  class="testimonials-section testimonials-about-{{ section.id }}{% if section.settings.color_background == settings.color_body_bg %} testimonials-section--with-divider{% endif %} text-{{ section.settings.align_text }}"
+  class="testimonials-about-section testimonials-section testimonials-about-{{ section.id }}{% if section.settings.color_background == settings.color_body_bg %} testimonials-section--with-divider{% endif %} text-{{ section.settings.align_text }}"
   data-section-id="{{ section.id }}"
   data-section-type="testimonials-about"
   data-aos>
@@ -29,30 +29,58 @@
         data-count="{{ section.blocks.size }}">
         {%- for block in section.blocks -%}
           <div
-            class="testimonials-slide testimonials-slide--{{ block.id }}"
+            class="testimonials-about-slide testimonials-slide testimonials-slide--{{ block.id }}"
             data-index="{{ forloop.index0 }}"
             data-aos="row-of-{{ section.blocks.size }}"
             {{ block.shopify_attributes }}>
             <blockquote class="testimonials-slider__text">
+
+            <div style="display:flex;">
+
               {%- if block.settings.icon == 'quote' -%}
                 <span class="quote-icon"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-quote" viewBox="0 0 41 35"><path d="M10.208 17.711h6.124v16.332H0V21.684C0 8.184 5.444.956 16.332 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766zm24.498 0h6.124v16.332H24.498V21.684C24.498 8.184 29.942.956 40.83 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766z" fill="#000" fill-rule="evenodd"/></svg></span>
               {%- elsif block.settings.icon == '5-stars' -%}
-                <span class="testimonial-stars">★★★★★</span>
+                <span class="testimonial-stars"><img src="{{ section.settings.stars-5 | img_url: '400x' }}"></span>
+              {%- elsif block.settings.icon == '4-5-stars' -%}
+                <span class="testimonial-stars"><img src="{{ section.settings.stars-4-5 | img_url: '400x' }}"></span>
               {%- elsif block.settings.icon == '4-stars' -%}
-                <span class="testimonial-stars">★★★★</span>
-              {%- elsif block.settings.icon == '3-stars' -%}
-                <span class="testimonial-stars">★★★</span>
-              {%- elsif block.settings.icon == '2-stars' -%}
-                <span class="testimonial-stars">★★</span>
-              {%- elsif block.settings.icon == '1-star' -%}
-                <span class="testimonial-stars">★</span>
+                <span class="testimonial-stars"><img src="{{ section.settings.stars-4 | img_url: '400x' }}"></span>
+              {%- endif -%}
+
+              <div class="tp-widget-review__source popover-activator" style=" padding-left: 8px; display: block; min-width: 0; color: #6c6c85; position: relative;">
+                <div class="verification-label-wrapper" style=" align-items: center; position: relative;">
+                  <div class="verification-label" style="display: flex; font-size: 13px; font-weight: 400; height: 19px; line-height: 16px; margin-top: 2px; overflow: hidden;">
+                    <div class="label-icon" style="transform: translatey(2px); flex-shrink: 0; height: 18px; margin: 0 4px 2.5px auto; width: 14px;">
+                      <div class="">
+                        <div style="position: relative; height: 0; width: 100%; padding: 0; padding-bottom: 100%;">
+                          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg style=" position:="" absolute;="" height:="" 100%;="" width:="" left:="" 0;="" top:="" 0;""="">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7 14C10.866 14 14 10.866 14 7C14 3.13401 10.866 0 7 0C3.13401 0 0 3.13401 0 7C0 10.866 3.13401 14 7 14ZM6.09217 7.81401L9.20311 4.7031C9.44874 4.45757 9.84688 4.45757 10.0923 4.7031C10.338 4.94864 10.338 5.34673 10.0923 5.59226L6.62009 9.06448C6.59573 9.10283 6.56682 9.13912 6.53333 9.17256C6.28787 9.41821 5.88965 9.41821 5.64402 9.17256L3.7059 7.11031C3.46046 6.86464 3.46046 6.46669 3.7059 6.22102C3.95154 5.97548 4.34968 5.97548 4.59512 6.22102L6.09217 7.81401Z" fill="currentColor"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="label-text" style="white-space: nowrap; overflow: hidden;text-overflow: ellipsis;">Invited</div>
+                    {% comment %} <div class="tp-widget-review__source__information" style="right: -26.6667px; left: auto;">
+                      <div class="tp-widget-review__source__arrow" style="left: calc(165.675px);"></div>
+                      <div class="information-title">Invited review</div>
+                      <div class="information-text">Reviews for Trustpilot that are labeled <b>Invited</b> were written via a link leading directly to our review form.</div>
+                    </div> {% endcomment %}
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+              {%- if block.settings.testimonial_title != blank -%}
+              <cite>{{ block.settings.testimonial_title | escape }}</cite>
               {%- endif -%}
 
               {%- if block.settings.testimonial != blank -%}
                 <div class="rte-setting text-spacing">{{ block.settings.testimonial }}</div>
               {%- endif -%}
 
-              {%- if block.settings.image != blank -%}
+              {% comment %} {%- if block.settings.image != blank -%}
                 <div class="testimonail-image{% if section.settings.round_images %} testimonail-image--round{% endif %}">
                   <div class="image-wrap text-spacing" style="height: 0; padding-bottom: {{ 100 | divided_by: block.settings.image.aspect_ratio }}%;">
                     {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
@@ -67,14 +95,14 @@
                     </noscript>
                   </div>
                 </div>
-              {%- endif -%}
+              {%- endif -%} {% endcomment %}
 
-              {%- if block.settings.author != blank -%}
+              {% comment %} {%- if block.settings.author != blank -%}
                 <cite>{{ block.settings.author | escape }}</cite>
               {%- endif -%}
               {%- if block.settings.author_info != blank -%}
                 <div class="testimonials__info">{{ block.settings.author_info | escape }}</div>
-              {%- endif -%}
+              {%- endif -%} {% endcomment %}
             </blockquote>
           </div>
         {%- endfor -%}
@@ -146,7 +174,20 @@
         "label": "Button Text",
         "default": "Read All Reviews"
       },
-      
+      {
+        "type": "image_picker",
+        "id": "stars-5",
+        "label": "5 Star image"
+      },
+      {
+        "type": "image_picker",
+        "id": "stars-4-5",
+        "label": "4.5 Star image"
+      },      {
+        "type": "image_picker",
+        "id": "stars-4",
+        "label": "4 Star image"
+      },
       {
         "type": "checkbox",
         "id": "round_images",
@@ -183,35 +224,31 @@
                 "label": "None"
               },
               {
-                "value": "quote",
-                "label": "Quote"
-              },
-              {
                 "value": "5-stars",
                 "label": "5 stars"
+                },
+              {
+                "value": "4-5-stars",
+                "label": "4.5 stars"
               },
               {
                 "value": "4-stars",
                 "label": "4 stars"
-              },
-              {
-                "value": "3-stars",
-                "label": "3 stars"
-              },
-              {
-                "value": "2-stars",
-                "label": "2 stars"
-              },
-              {
-                "value": "1-star",
-                "label": "1 star"
+
               }
             ]
+          },
+          
+          {
+            "type": "text",
+            "id": "testimonial_title",
+            "label": "Review Title",
+            "default": "Great Service"
           },
           {
             "type": "richtext",
             "id": "testimonial",
-            "label": "Text",
+            "label": "Review",
             "default": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>"
           },
           {
@@ -230,6 +267,12 @@
             "id": "author_info",
             "label": "Author info",
             "default": "Los Angeles, CA"
+          },
+          {
+            "type": "checkbox",
+            "id": "invited",
+            "label": "Include the Invited label",
+            "default": true
           }
         ]
       }

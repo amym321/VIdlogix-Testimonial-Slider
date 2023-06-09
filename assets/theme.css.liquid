@@ -304,7 +304,11 @@
 
 .flickity-previous{ left:10px; }
 
+.testimonials-about-section .flickity-previous{ left: -50px; } /*trustpilot - am*/
+
 .flickity-next{ right:10px; }
+
+.testimonials-about-section .flickity-next{ right: -50px; } /*trustpilot - am*/
 
 .flickity-rtl .flickity-previous{
   left:auto;
@@ -6795,25 +6799,25 @@ input[type=image]{
 }
 
 .testimonials-section,
-.testimonials-about-section {
+.testimonials-about-section {  /*trustpilot - am*/
   padding:25.5px 0;
 }
 
 /*  code change per 4.1.1 customization */
 .testimonials-section .bottom-link,
-.testimonials-about-section .bottom-link {
+.testimonials-about-section .bottom-link {  /*trustpilot - am*/
   padding:66px 0;
 }
 /*  code change per 4.1.1 customization */
 @media only screen and (max-width: 768px) {
   .testimonials-section .bottom-link,
-  .testimonials-about-section .bottom-link {
+  .testimonials-about-section .bottom-link {  /*trustpilot - am*/
     padding: 30px 0 35px 0;
   }
 }
 
 .testimonials-section--with-divider,
-.testimonials-about-section--with-divider{
+.testimonials-about-section--with-divider{  /*trustpilot - am*/
   border-top:1px solid;
   border-top-color:{{ settings.color_borders | default: "#1c1d1d" }};
   border-top-color:var(--colorBorder);
@@ -6840,9 +6844,11 @@ input[type=image]{
     padding:75px 0;
   }
 
-  .testimonials-section,
-  .testimonials-about-section{
+  .testimonials-section {
     padding:75px 0;
+  }
+  .testimonials-about-section{  /*trustpilot - am*/
+    padding:75px 100px;
   }
 }
 
@@ -9701,6 +9707,11 @@ html[dir=rtl] .background-media-text__text{
   width:33%
 }
 
+.testimonials-about-slide{  /*trustpilot - am*/
+  width:25%;
+  padding: 0 25px;
+}
+
 .testimonials-slide:first-child{
     display:block;
   }
@@ -9713,6 +9724,9 @@ html[dir=rtl] .background-media-text__text{
 .testimonials-slide .testimonials-slider__text{
     transform:scale(0.95);
     transition:transform 0.5s ease,box-shadow 0.5s ease;
+  }
+  .testimonials-about-slide .testimonials-slider__text{  /*trustpilot - am*/
+    transform:scale(1);
   }
 
 .testimonials-slide.is-selected .testimonials-slider__text{
@@ -9807,7 +9821,7 @@ html[dir=rtl] .background-media-text__text{
   }
 
 .testimonials-section .flickity-page-dots,
-.testimonials-about-section .flickity-page-dots{
+.testimonials-about-section .flickity-page-dots{ /*trustpilot - am*/
   bottom:0;
 }
 
@@ -13308,3 +13322,18 @@ button#dummy-chat-button.chat-toggle {
 .shopify-payment-terms {
   margin: 0 0 20px;
 }
+
+/* Trustpilot Testimonial Slider*/
+
+/* .testimonials-about-section .testimonials-slide.is-selected .testimonials-slider__text{
+  box-shadow: 0 1px 0 0 rgba(182,196,210,.4);
+} */
+
+.testimonials-about-section .testimonials-slider__text {
+  padding: 15px;
+}
+
+.testimonials-about-section .testimonial-stars img {
+  height:17px;
+}
+
