@@ -257,7 +257,7 @@
       ],
       "settings": {
         "title": "Happy Customers",
-        "align_text": "center",
+        "align_text": "left",
         "more_link": "",
         "link_text": "Read All Reviews",
         "round_images": true,
