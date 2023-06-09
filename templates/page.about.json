@@ -152,94 +152,114 @@
           "type": "testimonial",
           "settings": {
             "icon": "quote",
+            "testimonial_title": "Great Service",
             "testimonial": "<p>The price was right. The shipping was quick. The packaging was perfect. How is customer service this good in the 21st century? Keep doing simple & good work.<\/p>",
             "image": "shopify:\/\/shop_images\/UGC-2.png",
             "author": "Michael V.",
-            "author_info": ""
+            "author_info": "",
+            "invited": true
           }
         },
         "template--14937465815107__19ea0694-57d4-4d79-8f9a-d6db5dd02aef-1686244060138da3bd-1": {
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
+            "testimonial_title": "Great Service",
             "testimonial": "<p>Vidlogix is a large retailer, but there's still that hometown feeling they've been able to preserve within their culture. You feel like you're dealing with something other than a box store.<\/p>",
             "image": "shopify:\/\/shop_images\/UGC-6.png",
             "author": "Diane K.",
-            "author_info": ""
+            "author_info": "",
+            "invited": true
           }
         },
         "template--14937465815107__19ea0694-57d4-4d79-8f9a-d6db5dd02aef-1686244060138da3bd-2": {
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
+            "testimonial_title": "Great Service",
             "testimonial": "<p>Had an absolutely excellent experience with Jesse. He was helpful, friendly, listened & made great recommendations<\/p>",
             "image": "shopify:\/\/shop_images\/UGC-1.png",
             "author": "Natasha A.",
-            "author_info": ""
+            "author_info": "",
+            "invited": true
           }
         },
         "template--14937465815107__19ea0694-57d4-4d79-8f9a-d6db5dd02aef-1686244060138da3bd-3": {
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
+            "testimonial_title": "Great Service",
             "testimonial": "<p>The reason I look to you for electronic equipment is customer service, period. Your sales people know their equipment.<\/p>",
             "image": "shopify:\/\/shop_images\/UGC-4.png",
             "author": "Karen F.",
-            "author_info": ""
+            "author_info": "",
+            "invited": true
           }
         },
         "1b36881a-090b-4697-9663-e15b1daab294": {
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
+            "testimonial_title": "Great Service",
             "testimonial": "<p>SLIDE 5<\/p>",
             "author": "SLIDE 5",
-            "author_info": ""
+            "author_info": "",
+            "invited": true
           }
         },
         "1e97536a-c527-4701-9f91-dcd4a8973713": {
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
+            "testimonial_title": "Great Service",
             "testimonial": "<p>SLIDE 6<\/p>",
             "author": "SLIDE 6",
-            "author_info": ""
+            "author_info": "",
+            "invited": true
           }
         },
         "3ffdd206-423b-4af7-8dc4-50b17b427a45": {
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
+            "testimonial_title": "Great Service",
             "testimonial": "<p>SLIDE 7<\/p>",
             "author": "SLIDE 7",
-            "author_info": ""
+            "author_info": "",
+            "invited": true
           }
         },
         "3bcabcfb-5161-4638-a6bd-f95a7bfc06a8": {
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
+            "testimonial_title": "Great Service",
             "testimonial": "<p>SLIDE 8<\/p>",
             "author": "SLIDE 8",
-            "author_info": ""
+            "author_info": "",
+            "invited": true
           }
         },
         "348c0e37-8288-4a27-b096-38785a013dd8": {
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
+            "testimonial_title": "Great Service",
             "testimonial": "<p>SLIDE 9<\/p>",
             "author": "SLIDE 9",
-            "author_info": ""
+            "author_info": "",
+            "invited": true
           }
         },
         "b9d93175-22cb-40ac-bde4-76cfefe69556": {
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
+            "testimonial_title": "Great Service",
             "testimonial": "<p>SLIDE 10<\/p>",
             "author": "SLIDE 10",
-            "author_info": ""
+            "author_info": "",
+            "invited": true
           }
         }
       },
@@ -260,6 +280,9 @@
         "align_text": "left",
         "more_link": "",
         "link_text": "Read All Reviews",
+        "stars-5": "shopify:\/\/shop_images\/5_stars_3_8950ab16-d5d3-4f43-b0cc-4bc370503789.jpg",
+        "stars-4-5": "shopify:\/\/shop_images\/4.5_stars_3_69e34718-9bb9-4641-88a8-bf44309a0efe.jpg",
+        "stars-4": "shopify:\/\/shop_images\/4_stars_3_a867b97d-d1c9-46b9-a190-6067c36737fc.jpg",
         "round_images": true,
         "color_background": "#f8f6f7",
         "color_text": "#1c1d1d"
