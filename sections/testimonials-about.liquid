@@ -34,7 +34,7 @@
             data-index="{{ forloop.index0 }}"
             data-aos="row-of-{{ section.blocks.size }}"
             {{ block.shopify_attributes }}>
-            <blockquote style="max-height: 185px; min-height: 185px;" class="testimonials-slider__text">
+            <blockquote class="testimonials-slider__text">
 
               <div style="display:flex;">
 
@@ -48,22 +48,16 @@
                   <span class="testimonial-stars"><img src="{{ section.settings.stars-4 | img_url: '400x' }}"></span>
                 {%- endif -%}
 
-                <div class="trust-tooltip" style=" padding-left: 8px; display: block; min-width: 0; color: #6c6c85; position: relative;">
-                  <span class="trust-tooltiptext" style="font-size:13px; ">
+                <div class="trust-tooltip">
+                  <span class="trust-tooltiptext">
                       Reviews for Trustpilot that are labeled <b>Invited</b> were written via a link leading directly to our review form.</span>
-                  <div class="" style=" align-items: center; position: relative;">
-                    <div class="" style="transform: translatey(2px); display: flex; font-size: 13px; font-weight: 400; height: 19px; line-height: 16px; margin-top: 2px; overflow: hidden;">
-                      <div class="" style="transform: translatey(2px); flex-shrink: 0; height: 18px; margin: 0 4px 2.5px auto; width: 14px;">
-                        <div class="">
-                          <div style="position: relative; height: 0; width: 100%; padding: 0; padding-bottom: 100%;">
-                            <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg style=" position:="" absolute;="" height:="" 100%;="" width:="" left:="" 0;="" top:="" 0;""="">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M7 14C10.866 14 14 10.866 14 7C14 3.13401 10.866 0 7 0C3.13401 0 0 3.13401 0 7C0 10.866 3.13401 14 7 14ZM6.09217 7.81401L9.20311 4.7031C9.44874 4.45757 9.84688 4.45757 10.0923 4.7031C10.338 4.94864 10.338 5.34673 10.0923 5.59226L6.62009 9.06448C6.59573 9.10283 6.56682 9.13912 6.53333 9.17256C6.28787 9.41821 5.88965 9.41821 5.64402 9.17256L3.7059 7.11031C3.46046 6.86464 3.46046 6.46669 3.7059 6.22102C3.95154 5.97548 4.34968 5.97548 4.59512 6.22102L6.09217 7.81401Z" fill="currentColor"></path>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="" style="white-space: nowrap; overflow: hidden;text-overflow: ellipsis;">Invited</div>
+                  <div class="trust-invited">
+                    <div class="trust-invited-svg">
+                      <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg style=" position:="" absolute;="" height:="" 100%;="" width:="" left:="" 0;="" top:="" 0;""="">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 14C10.866 14 14 10.866 14 7C14 3.13401 10.866 0 7 0C3.13401 0 0 3.13401 0 7C0 10.866 3.13401 14 7 14ZM6.09217 7.81401L9.20311 4.7031C9.44874 4.45757 9.84688 4.45757 10.0923 4.7031C10.338 4.94864 10.338 5.34673 10.0923 5.59226L6.62009 9.06448C6.59573 9.10283 6.56682 9.13912 6.53333 9.17256C6.28787 9.41821 5.88965 9.41821 5.64402 9.17256L3.7059 7.11031C3.46046 6.86464 3.46046 6.46669 3.7059 6.22102C3.95154 5.97548 4.34968 5.97548 4.59512 6.22102L6.09217 7.81401Z" fill="currentColor"></path>
+                      </svg>
                     </div>
+                    <div class="trust-invited-text">Invited</div>
                   </div>
                 </div>
 
@@ -71,39 +65,24 @@
 
 
               {%- if block.settings.testimonial_title != blank -%}
-              <cite style="font-size:14px;">{{ block.settings.testimonial_title | escape }}</cite>
+                <a href="{{section.settings.more_link}}" target="_blank" rel="noopener">
+                  <cite style="font-size:14px;">{{ block.settings.testimonial_title | escape }}</cite>
+                </a>
               {%- endif -%}
 
               {%- if block.settings.testimonial != blank -%}
                 <a href="{{section.settings.more_link}}" target="_blank" rel="noopener">
                   <div>
-                    <div style="font-size:13px;
-                        max-height: 65px;
-                        white-space: normal;
-                        word-wrap: break-word;
-                        /* white-space: nowrap; */
-                        overflow: hidden;
-                        /*max-width: 200px;*/
-                        margin-bottom: 10px;
-                        /*display:inline;*/
-                        /*max-width: 20ch;*/
-                        text-overflow: ellipsis;
-                        --max-lines: 3;
-                        position: relative;
-                        "
-                      class="testimonial-quote rte-setting 
-                      ">{{ block.settings.testimonial }}
-                    </div>
-                    {% comment %} <span style="display:inline;">1...</span> {% endcomment %}
+                    <div class="testimonial-quote rte-setting">{{ block.settings.testimonial }}</div>
                   </div>
-                  {% comment %} <span style="display:inline;">2...</span> {% endcomment %}
-
                 </a>
               {%- endif -%}
 
               {%- if block.settings.author != blank -%}
-                <cite style="font-size:13px; color: rgba(0,0,0,.6);">{{ block.settings.author | escape }}</cite>
-                {% comment %} <div style="font-size:13px;">{{ block.settings.author | escape }}</div> {% endcomment %}
+                <a href="{{section.settings.more_link}}" target="_blank" rel="noopener">
+                  <cite style="font-size:13px; color: rgba(0,0,0,.6);">{{ block.settings.author | escape }}</cite>
+                  {% comment %} <div style="font-size:13px;">{{ block.settings.author | escape }}</div> {% endcomment %}
+                </a>
               {%- endif -%}
               {%- if block.settings.author_info != blank -%}
                 <div class="testimonials__info">{{ block.settings.author_info | escape }}</div>
@@ -136,6 +115,188 @@
 
   {%- endif -%}
 </div>
+
+
+<style>
+
+/* Trustpilot Testimonial Slider*/
+
+  /*drives how many quote blocks display*/
+  .testimonials-about-slide {
+    width:25%;
+    padding: 0 25px;
+  }
+  @media (max-width:1180px) {
+    .testimonials-about-slide {
+      width:33%;
+    }
+  }
+  @media (max-width:975px) {
+    .testimonials-about-slide {
+      width:50%;
+    }
+  }
+  @media (max-width:606px) {
+    .testimonials-about-slide {
+      width:100%;
+    }
+  }
+  
+  /* .testimonials-about-section .testimonials-slide.is-selected .testimonials-slider__text{
+    box-shadow: 0 1px 0 0 rgba(182,196,210,.4);
+  } */
+  
+  .testimonials-about-section .testimonial-stars {
+    margin-bottom: 3px;
+  }
+  
+  .testimonials-about-section .testimonials-slider__text {
+    padding: 15px;
+    max-height: 185px;
+    min-height: 185px;
+  }
+  
+  .testimonials-about-section .testimonial-stars img {
+    height:17px;
+  }
+  
+  .testimonials-about-section .testimonials-slide.is-selected .testimonials-slider__text {
+    box-shadow: 0 10px 15px #0000001a;
+  }
+  
+  /*.testimonials-about-section .testimonial-quote::before {
+    position: absolute;
+    content: ".....";
+        bottom: 52px;
+        right: 15px;
+    bottom: 2px;
+    right: 0px;
+    background: white;
+  }
+  .testimonials-about-section .testimonial-quote::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1rem;
+    height: 1rem;
+  }*/
+  
+  .testimonials-about-section .flickity-button {
+    background-color: #c0c0c0;
+  }
+  @media (min-width: 769px) {
+    .testimonials-about-section .flickity-previous{ left: -50px; }
+    .testimonials-about-section .flickity-next{ right: -50px; }
+  }
+  
+  .testimonials-about-section .flickity-prev-next-button {
+    top: 42%;
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Trustpilot Tooltip on Testimonial Slider */
+  .trust-tooltip {
+    position: relative;
+    display: inline-block;
+    padding-left: 8px;
+    display: block;
+    min-width: 0;
+    color: #6c6c85;
+    position: relative;
+  }
+  
+  .trust-tooltip .trust-tooltiptext {
+    font-size:13px;
+    visibility: hidden;
+    width: 200px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    /* box-shadow: rgba(0, 0, 0, 0.65) 0px 5px 15px; */
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 34px 35px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .trust-tooltip:hover .trust-tooltiptext {
+    visibility: visible;
+  }
+  
+  .trust-tooltip .trust-tooltiptext {
+    width: 200px;
+    top: 110%;
+    left: 50%;
+    /*margin-left: -60px;*/ /* Use half of the width (120/2 = 60), to center the tooltip */
+    margin-left: -100px;
+  }
+  
+  .trust-tooltip .trust-tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+  }
+  
+  .trust-invited {
+    transform: translatey(2px);
+    display: flex;
+    font-size: 13px;
+    font-weight: 400;
+    height: 19px;
+    line-height: 16px;
+    margin-top: 2px;
+    overflow: hidden;
+  }
+  
+  .trust-invited-svg {
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding: 0;
+    padding-bottom: 100%;
+  
+    transform: translatey(2px);
+    flex-shrink: 0;
+    height: 18px;
+    margin: 0 4px 2.5px auto;
+    width: 14px;
+  }
+  
+  /* .trust-invited-text {
+    white-space: nowrap; overflow: hidden;text-overflow: ellipsis;
+  } */
+
+
+  .testimonials-about-section .testimonial-quote {
+    font-size:13px;
+    max-height: 65px;
+    white-space: normal;
+    word-wrap: break-word;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    /*max-width: 200px;*/
+    margin-bottom: 10px;
+    /*display:inline;*/
+    /*max-width: 20ch;*/
+    text-overflow: ellipsis;
+    --max-lines: 3;
+    position: relative;
+
+    display: -webkit-box; /* truncates*/
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+</style>
+
+
 
 <!-- class="index-section--hidden" instead of "index-section" to remove the bottom margin -->
 {% schema %}
