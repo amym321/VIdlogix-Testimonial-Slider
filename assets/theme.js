@@ -2287,7 +2287,6 @@ lazySizesConfig.expFactor = 4;
                       item.setAttribute('aria-expanded', false);
     
                       var itemContainer = document.getElementById(elAttribute); // gets 1st element with aria-controls in it
-                      console.log('log 306) itemContainer innerhtml = '+ itemContainer.innerHTML);
                       var closeHeight = 0;
     
                       setTransitionHeight(itemContainer, closeHeight, true, true);
@@ -2309,7 +2308,6 @@ lazySizesConfig.expFactor = 4;
                   item.setAttribute('aria-expanded', false);
 
                   var itemContainer = document.getElementById(elAttribute); // gets 1st element with aria-controls in it
-                  console.log('log 305) itemContainer innerhtml = '+ itemContainer.innerHTML); //grabbing 
 
                   var closeHeight = 0;
 
@@ -8452,15 +8450,24 @@ lazySizesConfig.expFactor = 4;
   
 
 
-  // - am
+
+
+
+  // Trustpilot Review Slider - am
   theme.TestimonialsAbout = (function() {
     var defaults = {
-      adaptiveHeight: true,
+      // adaptiveHeight: true,
+      adaptiveHeight: false,
       avoidReflow: true,
       // pageDots: true,
       pageDots: false,
       // prevNextButtons: false
-      prevNextButtons: true
+      prevNextButtons: true,
+      //- am
+      groupCells: true,
+      selectedAttraction: 0.04,   // speed
+      // friction: 0.15,          // Higher friction makes the slider feel stickier and less bouncy. Lower friction makes the slider feel looser and more wobbly.
+      cellAlign: 'left'           // prevents the cells from being offset 50% at the end of loop
     };
   
     function Testimonials(container) {
@@ -8482,7 +8489,7 @@ lazySizesConfig.expFactor = 4;
     Testimonials.prototype = Object.assign({}, Testimonials.prototype, {
       init: function() {
         // Do not wrap when only a few blocks
-        if (this.slideshow.dataset.count <= 3) {
+        if (this.slideshow.dataset.count <= 3) { // however many slides, 10 slides
           defaults.wrapAround = false;
         }
   

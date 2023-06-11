@@ -13354,16 +13354,6 @@ button#dummy-chat-button.chat-toggle {
 }
 
 
-.testimonials-about-section .tp-widget-review__source:hover::after {
-  content: "";
-  display: block;
-  height: 20px;
-  left: 0;
-  position: absolute;
-  top: 100%;
-  width: 100%;
-}
-
 .testimonials-about-section .testimonials-slide.is-selected .testimonials-slider__text {
   box-shadow: 0 10px 15px #0000001a;
 }
@@ -13390,11 +13380,57 @@ button#dummy-chat-button.chat-toggle {
 .testimonials-about-section .flickity-button {
   background-color: #c0c0c0;
 }
-.testimonials-about-section .flickity-previous{ left: -50px; }
-.testimonials-about-section .flickity-next{ right: -50px; }
+@media (min-width: 769px) {
+  .testimonials-about-section .flickity-previous{ left: -50px; }
+  .testimonials-about-section .flickity-next{ right: -50px; }
+}
 
 .testimonials-about-section .flickity-prev-next-button {
   top: 42%;
   width: 30px;
   height: 30px;
+}
+
+/* Trustpilot Tooltip on Testimonial Slider */
+.trust-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.trust-tooltip .trust-tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  /* box-shadow: rgba(0, 0, 0, 0.65) 0px 5px 15px; */
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 34px 35px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  position: absolute;
+  z-index: 1;
+}
+
+.trust-tooltip:hover .trust-tooltiptext {
+  visibility: visible;
+}
+
+.trust-tooltip .trust-tooltiptext {
+  width: 200px;
+  top: 110%;
+  left: 50%;
+  /*margin-left: -60px;*/ /* Use half of the width (120/2 = 60), to center the tooltip */
+  margin-left: -100px;
+}
+
+.trust-tooltip .trust-tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
 }
