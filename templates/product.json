@@ -210,10 +210,10 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial_title": "Great Service",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author's name",
-            "author_info": "Los Angeles, CA",
+            "testimonial_title": "Vidlogix is great",
+            "testimonial": "<p>The ease of finding what I needed and the way they are able to guide you through what is needed to install whatever you buy. Also, placing the order was easy and the price was low.<\/p>",
+            "author": "Dana",
+            "author_info": "",
             "invited": true
           }
         },
