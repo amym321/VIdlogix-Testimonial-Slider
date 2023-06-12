@@ -249,6 +249,17 @@
             "author_info": "",
             "invited": true
           }
+        },
+        "17d60afe-618a-4390-8f48-6e3840427901": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial_title": "Vidlogix has been my...",
+            "testimonial": "<p>Vidlogix has been my go-to source for products and advice for some time now. They always hit the ball out of the park. Over the past few years, I've updated a lot of my equipment - amp, speakers, cd player, turntable, accessories. They've given great advice in product choice decisions. Obviously carry top brands. And great followup tech support on any issues.<\/p>",
+            "author": "Mark Vorder Bruegge Jr.",
+            "author_info": "",
+            "invited": true
+          }
         }
       },
       "block_order": [
@@ -256,7 +267,8 @@
         "template--14938200277059__4db580b1-2115-4bd5-a7eb-e028381e3f41-16866008280212c890-1",
         "template--14938200277059__4db580b1-2115-4bd5-a7eb-e028381e3f41-16866008280212c890-2",
         "template--14938200277059__4db580b1-2115-4bd5-a7eb-e028381e3f41-16866008280212c890-3",
-        "template--14938200277059__4db580b1-2115-4bd5-a7eb-e028381e3f41-16866008280212c890-4"
+        "template--14938200277059__4db580b1-2115-4bd5-a7eb-e028381e3f41-16866008280212c890-4",
+        "17d60afe-618a-4390-8f48-6e3840427901"
       ],
       "settings": {
         "title": "See what people are saying about us",
