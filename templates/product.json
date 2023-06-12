@@ -259,9 +259,9 @@
         "template--14938200277059__4db580b1-2115-4bd5-a7eb-e028381e3f41-16866008280212c890-4"
       ],
       "settings": {
-        "title": "Testimonials",
-        "align_text": "center",
-        "more_link": "",
+        "title": "See what people are saying about us",
+        "align_text": "left",
+        "more_link": "https:\/\/www.trustpilot.com\/review\/vidlogix.com?utm_medium=trustbox&utm_source=Slider",
         "average_rating": "4.7",
         "total_reviews": "36",
         "color_background": "#f9f9f9",
