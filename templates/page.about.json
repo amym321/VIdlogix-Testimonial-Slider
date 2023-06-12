@@ -148,61 +148,13 @@
     "19ea0694-57d4-4d79-8f9a-d6db5dd02aef": {
       "type": "testimonials-about",
       "blocks": {
-        "template--14937465815107__19ea0694-57d4-4d79-8f9a-d6db5dd02aef-1686244060138da3bd-0": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "4-5-stars",
-            "testimonial_title": "Great Service",
-            "testimonial": "<p>The price was right. The shipping was quick. The packaging was perfect. How is customer service this good in the 21st century? Keep doing simple & good work.<\/p>",
-            "image": "shopify:\/\/shop_images\/UGC-2.png",
-            "author": "Michael V.",
-            "author_info": "",
-            "invited": true
-          }
-        },
-        "template--14937465815107__19ea0694-57d4-4d79-8f9a-d6db5dd02aef-1686244060138da3bd-1": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5-stars",
-            "testimonial_title": "Great Service",
-            "testimonial": "<p>Vidlogix is a large retailer, but there's still that hometown feeling they've been able to preserve within their culture. You feel like you're dealing with something other than a box store.<\/p>",
-            "image": "shopify:\/\/shop_images\/UGC-6.png",
-            "author": "Diane K.",
-            "author_info": "",
-            "invited": true
-          }
-        },
-        "template--14937465815107__19ea0694-57d4-4d79-8f9a-d6db5dd02aef-1686244060138da3bd-2": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5-stars",
-            "testimonial_title": "Great Service",
-            "testimonial": "<p>Had an absolutely excellent experience with Jesse. He was helpful, friendly, listened & made great recommendations<\/p>",
-            "image": "shopify:\/\/shop_images\/UGC-1.png",
-            "author": "Natasha A.",
-            "author_info": "",
-            "invited": true
-          }
-        },
-        "template--14937465815107__19ea0694-57d4-4d79-8f9a-d6db5dd02aef-1686244060138da3bd-3": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5-stars",
-            "testimonial_title": "Great Service",
-            "testimonial": "<p>The reason I look to you for electronic equipment is customer service, period. Your sales people know their equipment.<\/p>",
-            "image": "shopify:\/\/shop_images\/UGC-4.png",
-            "author": "Karen F.",
-            "author_info": "",
-            "invited": true
-          }
-        },
         "1b36881a-090b-4697-9663-e15b1daab294": {
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial_title": "Great Service",
-            "testimonial": "<p>SLIDE 5<\/p>",
-            "author": "SLIDE 5",
+            "testimonial_title": "I placed my order",
+            "testimonial": "<p>I placed my order with Vidlogix and before they sent it out they called me to make sure they had all the correct information was correct and double check my information. What other company does that? I had my order 2 days later. I've ordered from these guys before and have never been disappointed. What I like is you have lifetime tech support for whatever you purchase from these guys. They are always the first place I go to.<\/p>",
+            "author": "Carson",
             "author_info": "",
             "invited": true
           }
@@ -264,10 +216,6 @@
         }
       },
       "block_order": [
-        "template--14937465815107__19ea0694-57d4-4d79-8f9a-d6db5dd02aef-1686244060138da3bd-0",
-        "template--14937465815107__19ea0694-57d4-4d79-8f9a-d6db5dd02aef-1686244060138da3bd-1",
-        "template--14937465815107__19ea0694-57d4-4d79-8f9a-d6db5dd02aef-1686244060138da3bd-2",
-        "template--14937465815107__19ea0694-57d4-4d79-8f9a-d6db5dd02aef-1686244060138da3bd-3",
         "1b36881a-090b-4697-9663-e15b1daab294",
         "1e97536a-c527-4701-9f91-dcd4a8973713",
         "3ffdd206-423b-4af7-8dc4-50b17b427a45",
