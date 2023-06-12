@@ -182,6 +182,7 @@
     },
     "163746679950095452": {
       "type": "testimonials",
+      "disabled": true,
       "blocks": {
         "163746679909a0cbe2-2": {
           "type": "testimonial",
@@ -240,6 +241,86 @@
         "color_text": "#1c1d1d"
       }
     },
+    "3b32f828-d327-4c96-98d7-6c8310903c53": {
+      "type": "testimonials-about",
+      "blocks": {
+        "template--14938200014915__3b32f828-d327-4c96-98d7-6c8310903c53-168658820374239bb3-0": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial_title": "Great Service",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA",
+            "invited": true
+          }
+        },
+        "template--14938200014915__3b32f828-d327-4c96-98d7-6c8310903c53-168658820374239bb3-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial_title": "Great Service",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA",
+            "invited": true
+          }
+        },
+        "template--14938200014915__3b32f828-d327-4c96-98d7-6c8310903c53-168658820374239bb3-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial_title": "Great Service",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA",
+            "invited": true
+          }
+        },
+        "template--14938200014915__3b32f828-d327-4c96-98d7-6c8310903c53-168658820374239bb3-3": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial_title": "Great Service",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA",
+            "invited": true
+          }
+        },
+        "template--14938200014915__3b32f828-d327-4c96-98d7-6c8310903c53-168658820374239bb3-4": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial_title": "Great Service",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA",
+            "invited": true
+          }
+        }
+      },
+      "block_order": [
+        "template--14938200014915__3b32f828-d327-4c96-98d7-6c8310903c53-168658820374239bb3-0",
+        "template--14938200014915__3b32f828-d327-4c96-98d7-6c8310903c53-168658820374239bb3-1",
+        "template--14938200014915__3b32f828-d327-4c96-98d7-6c8310903c53-168658820374239bb3-2",
+        "template--14938200014915__3b32f828-d327-4c96-98d7-6c8310903c53-168658820374239bb3-3",
+        "template--14938200014915__3b32f828-d327-4c96-98d7-6c8310903c53-168658820374239bb3-4"
+      ],
+      "settings": {
+        "title": "See what people are saying about us",
+        "align_text": "left",
+        "more_link": "https:\/\/www.trustpilot.com\/review\/vidlogix.com?utm_medium=trustbox&utm_source=Slider",
+        "average_rating": "4.7",
+        "total_reviews": "43",
+        "stars-5": "shopify:\/\/shop_images\/5_stars_3_8950ab16-d5d3-4f43-b0cc-4bc370503789.jpg",
+        "stars-4-5": "shopify:\/\/shop_images\/4.5_stars_3_69e34718-9bb9-4641-88a8-bf44309a0efe.jpg",
+        "stars-4": "shopify:\/\/shop_images\/4_stars_3_a867b97d-d1c9-46b9-a190-6067c36737fc.jpg",
+        "logo": "shopify:\/\/shop_images\/logo_3369a90c-3de9-4c59-ac7a-047646105c00.png",
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d"
+      }
+    },
     "16374675471ddb7cfa": {
       "type": "newsletter",
       "blocks": {
@@ -289,6 +370,7 @@
     "blog-posts",
     "16374606876c4b0894",
     "163746679950095452",
+    "3b32f828-d327-4c96-98d7-6c8310903c53",
     "16374675471ddb7cfa",
     "16601287683bcf7464"
   ]
